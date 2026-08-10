@@ -1,0 +1,380 @@
+   html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: #f7f7f3;
+            color: #171717;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        :root {
+            --dark: #080b1d;
+            --dark2: #111735;
+            --light: #f7f7f3;
+            --orange: #ff8a00;
+        }
+
+        .navbar {
+            background: rgba(8, 11, 29, 0.96);
+            padding: 18px 0;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .brand-mark {
+            width: 36px;
+            height: 36px;
+            border: 2px solid white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(45deg);
+            margin-right: 12px;
+        }
+
+        .brand-mark span {
+            transform: rotate(-45deg);
+        }
+
+        .nav-link {
+            color: #ddd !important;
+            font-size: 13px;
+            margin: 0 8px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--orange) !important;
+        }
+
+        .nav-btn {
+            border: 1px solid white;
+            color: white;
+            padding: 12px 24px;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .nav-btn:hover {
+            background: white;
+            color: black;
+        }
+
+        .hero {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(8, 11, 29, 0.97),
+                    rgba(8, 11, 29, 0.75),
+                    rgba(8, 11, 29, 0.30)
+                ),
+                url("./images/back.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+
+            color: white;
+        }
+
+        .hero-content {
+            padding-top: 80px;
+        }
+
+        .hero-line {
+            width: 40px;
+            height: 3px;
+            background: var(--orange);
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 76px);
+            line-height: 1.05;
+            font-weight: 500;
+        }
+
+        .hero h1 strong {
+            font-weight: 700;
+        }
+
+        .hero-text {
+            max-width: 600px;
+            color: #ddd;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-right: 20px;
+        }
+
+        .social-links a:hover {
+            color: var(--orange);
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .small-title {
+            color: var(--orange);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .section-title {
+            font-size: clamp(35px, 4vw, 55px);
+            line-height: 1.1;
+            font-weight: 600;
+        }
+
+        .section-text {
+            color: #666;
+            line-height: 1.9;
+        }
+
+        .dark-section {
+            background: var(--dark);
+            color: white;
+        }
+
+        .dark-section .section-text {
+            color: #ccc;
+        }
+
+        .about-image {
+            min-height: 430px;
+
+            background:
+                url("./images/cute.jpg");
+
+            background-size: cover;
+            background-position: normal;
+        }
+
+        .skill-box {
+            padding: 20px;
+            border-left: 2px solid var(--orange);
+        }
+
+        .service-list {
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .service {
+            padding: 22px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            cursor: pointer;
+        }
+
+        .service h5 {
+            margin: 0;
+        }
+
+        .service p {
+            display: none;
+            color: #bbb;
+            max-width: 600px;
+            margin-top: 15px;
+        }
+
+        .service.active p {
+            display: block;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 180px;
+            gap: 10px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(8, 11, 29, 0.8);
+
+            display: flex;
+            align-items: flex-end;
+
+            padding: 20px;
+
+            color: white;
+
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-item:nth-child(1) {
+            grid-row: span 2;
+        }
+
+        .portfolio-item:nth-child(4) {
+            grid-row: span 2;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            height: 100%;
+            border: 1px solid #e5e5e5;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .cta {
+            background: var(--dark2);
+            color: white;
+        }
+
+        .orange-btn {
+            background: var(--orange);
+            color: white;
+            border: none;
+
+            padding: 15px 35px;
+
+            letter-spacing: 2px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .orange-btn:hover {
+            background: #ff9d2e;
+            color: white;
+        }
+
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #aaa;
+            border-radius: 0;
+
+            background: transparent;
+
+            padding: 15px 0;
+
+            box-shadow: none !important;
+        }
+
+        .form-control:focus {
+            border-color: var(--orange);
+        }
+
+        footer {
+            background: var(--dark);
+            color: #aaa;
+            padding: 30px 0;
+            font-size: 12px;
+        }
+
+        #topButton {
+            position: fixed;
+
+            right: 25px;
+            bottom: 25px;
+
+            width: 45px;
+            height: 45px;
+
+            border: none;
+            border-radius: 50%;
+
+            background: var(--orange);
+            color: white;
+
+            display: none;
+
+            z-index: 999;
+        }
+
+
+        @media (max-width: 991px) {
+
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 575px) {
+
+            section {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .hero-text {
+                font-size: 15px;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 250px;
+            }
+
+            .portfolio-item:nth-child(1),
+            .portfolio-item:nth-child(4) {
+                grid-row: span 1;
+            }
+
+            .about-image {
+                min-height: 320px;
+            }
+
+        }
