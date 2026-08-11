@@ -1,0 +1,575 @@
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #555;
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =====================================
+           TOP HEADER
+        ===================================== */
+        .nav-item{
+             .hero-content .btn {
+            background: #4caf7a;
+            border: none;
+            color: white;
+        }
+
+ 
+        }
+
+        .top-header {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 14px 0;
+            font-size: 13px;
+        }
+
+        .top-header p {
+            margin: 0;
+            color: #777;
+        }
+
+        .top-header i {
+            color: #4caf7a;
+            margin-right: 6px;
+        }
+
+        .top-info {
+            text-align: right;
+        }
+
+        .top-info span {
+            margin-left: 25px;
+        }
+
+
+        /* =====================================
+           NAVBAR
+        ===================================== */
+
+        .navbar {
+            background: #fff !important;
+            min-height: 75px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .navbar-brand {
+            color: #333 !important;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .navbar-brand i {
+            color: #4caf7a;
+            margin-right: 7px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #555 !important;
+            font-size: 13px;
+            padding: 28px 17px !important;
+            transition: .3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #4caf7a !important;
+        }
+
+        .appointment-link {
+            background: #4caf7a;
+            color: #fff !important;
+            padding: 12px 20px !important;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        .appointment-link:hover {
+            background: #333;
+            color: #fff !important;
+        }
+
+
+        /* =====================================
+           HERO
+        ===================================== */
+
+        .hero {
+            position: relative;
+            min-height: 500px;
+
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,.35),
+                    rgba(0,0,0,.35)
+                ),
+                url("images/slider1.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            color: #fff;
+            max-width: 600px;
+        }
+
+        .hero-content h4 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .hero-content h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .hero-content .btn {
+            background: #4caf7a;
+            border: none;
+            padding: 13px 25px;
+            color: white;
+            font-size: 13px;
+        }
+
+        .hero-content .btn:hover {
+            background: #333;
+        }
+
+
+        /* =====================================
+           GENERAL
+        ===================================== */
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-heading {
+            margin-bottom: 45px;
+        }
+
+        .section-heading h2 {
+            color: #333;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #999;
+            font-size: 13px;
+        }
+
+
+        /* =====================================
+           ABOUT
+        ===================================== */
+
+        .about-section {
+            background: #fff;
+        }
+
+        .about-text h2 {
+            color: #333;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 13px;
+            line-height: 1.9;
+            color: #777;
+        }
+
+        .doctor-signature {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .doctor-signature i {
+            width: 42px;
+            height: 42px;
+            background: #f0f8f4;
+            color: #4caf7a;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 12px;
+        }
+
+        .doctor-signature strong {
+            color: #333;
+            display: block;
+            font-size: 14px;
+        }
+
+        .doctor-signature small {
+            color: #999;
+        }
+
+        .about-image img {
+            width: 100%;
+            display: block;
+        }
+
+
+        /* =====================================
+           DOCTORS
+        ===================================== */
+
+        .doctors-section {
+            background: #f7f7f7;
+        }
+
+        .doctor-box {
+            background: #fff;
+            border: 1px solid #eee;
+            transition: .3s;
+        }
+
+        .doctor-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,.08);
+        }
+
+        .doctor-box img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .doctor-content {
+            padding: 20px;
+        }
+
+        .doctor-content h4 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 7px;
+        }
+
+        .doctor-content p {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 6px;
+        }
+
+        .doctor-content span {
+            display: block;
+            font-size: 12px;
+            color: #777;
+            margin-top: 5px;
+        }
+
+
+        /* =====================================
+           NEWS
+        ===================================== */
+
+        .news-section {
+            background: #fff;
+        }
+
+        .news-card {
+            border: 1px solid #eee;
+            background: #fff;
+            height: 100%;
+            transition: .3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,.07);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 22px;
+        }
+
+        .news-date {
+            color: #4caf7a;
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        .news-content h3 {
+            font-size: 20px;
+            color: #333;
+            line-height: 1.4;
+            margin-bottom: 13px;
+        }
+
+        .news-content p {
+            color: #888;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .author img {
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .author strong {
+            display: block;
+            color: #333;
+            font-size: 11px;
+        }
+
+        .author small {
+            color: #aaa;
+            font-size: 10px;
+        }
+
+
+        /* =====================================
+           APPOINTMENT
+        ===================================== */
+
+        .appointment-section {
+            background: #f7f7f7;
+        }
+
+        .appointment-image img {
+            width: 100%;
+            max-height: 430px;
+            object-fit: contain;
+        }
+
+        .appointment-form h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .appointment-form > p {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+
+        .form-control,
+        .form-select {
+            height: 48px;
+            border-radius: 0;
+            border: 1px solid #ddd;
+            font-size: 13px;
+            color: #777;
+        }
+
+        textarea.form-control {
+            height: 120px;
+            padding-top: 15px;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #4caf7a;
+            box-shadow: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            height: 48px;
+            border: none;
+            background: #4caf7a;
+            color: white;
+            font-size: 13px;
+            transition: .3s;
+        }
+
+        .submit-btn:hover {
+            background: #333;
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        footer {
+            background: #333;
+            color: #aaa;
+            padding-top: 65px;
+        }
+
+        .footer-title {
+            color: #fff;
+            font-size: 17px;
+            margin-bottom: 22px;
+        }
+
+        footer p {
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            font-size: 12px;
+        }
+
+        .footer-links a:hover {
+            color: #4caf7a;
+        }
+
+        .social a {
+            display: inline-flex;
+            width: 35px;
+            height: 35px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #555;
+            color: #aaa;
+            border-radius: 50%;
+            margin-right: 5px;
+            transition: .3s;
+        }
+
+        .social a:hover {
+            background: #4caf7a;
+            color: #fff;
+            border-color: #4caf7a;
+        }
+
+        .copyright {
+            border-top: 1px solid #444;
+            margin-top: 45px;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 11px;
+        }
+
+
+        /* =====================================
+           RESPONSIVE
+        ===================================== */
+
+        @media (max-width: 991px) {
+
+            .navbar-nav .nav-link {
+                padding: 12px 0 !important;
+            }
+
+            .appointment-link {
+                margin: 5px 0;
+                display: inline-block;
+            }
+
+            .hero {
+                min-height: 430px;
+            }
+
+            .hero-content h1 {
+                font-size: 40px;
+            }
+
+            .top-info {
+                text-align: left;
+                margin-top: 8px;
+            }
+
+            .top-info span {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+
+
+        @media (max-width: 767px) {
+
+            .top-header {
+                text-align: center;
+            }
+
+            .top-info {
+                text-align: center;
+            }
+
+            .hero {
+                min-height: 380px;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .hero-content h4 {
+                font-size: 15px;
+            }
+
+            .section {
+                padding: 55px 0;
+            }
+
+            .about-image {
+                margin-top: 30px;
+            }
+
+            .doctor-box {
+                margin-bottom: 20px;
+            }
+
+            .appointment-image {
+                margin-bottom: 30px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+
+            .hero-content h1 {
+                font-size: 28px;
+            }
+
+            .section-heading h2 {
+                font-size: 25px;
+            }
+
+            .about-text h2,
+            .appointment-form h2 {
+                font-size: 24px;
+            }
+
+        }
