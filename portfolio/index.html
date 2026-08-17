@@ -177,8 +177,6 @@
                         responsive layouts and clean code.
 
                     </p>
-
-
                     <div class="row mt-4">
 
                         <div class="col-6">
@@ -514,134 +512,55 @@
 
 
 
-            <div class="portfolio-grid">
+            
+<div class="carousel-wrapper">
+    <!-- Bootstrap Carousel Component -->
+    <div id="mySiteCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        <!-- Bottom Dots Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mySiteCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mySiteCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mySiteCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
 
-
-                <div class="portfolio-item">
-
-                    <img src="./images/laptop.jpg"
-                        alt="Project">
-
-                    <div class="portfolio-overlay">
-
-                        <div>
-
-                            <small>
-                                WEB DESIGN
-                            </small>
-
-                            <h5>
-                                Creative Building
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="portfolio-item">
-
-  <img src="./images/Screenshot 2026-08-10 000541.png" alt="Project">
-
-                    <div class="portfolio-overlay">
-
-                        <div>
-
-                            <small>
-                                BRANDING
-                            </small>
-
-                            <h5>
-                                Modern Architecture
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="portfolio-item">
-
-                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=900&q=85"
-                        alt="Project">
-
-                    <div class="portfolio-overlay">
-
-                        <div>
-
-                            <small>
-                                UI DESIGN
-                            </small>
-
-                            <h5>
-                                Digital Product
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="portfolio-item">
-
-                    <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=900&q=85"
-                        alt="Project">
-
-                    <div class="portfolio-overlay">
-
-                        <div>
-
-                            <small>
-                                DEVELOPMENT
-                            </small>
-
-                            <h5>
-                                Creative Studio
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="portfolio-item">
-
-                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85"
-                        alt="Project">
-
-                    <div class="portfolio-overlay">
-
-                        <div>
-
-                            <small>
-                                PRODUCT DESIGN
-                            </small>
-
-                            <h5>
-                                Minimal Workspace
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
+        <!-- Carousel Slides -->
+        <div class="carousel-inner">
+            
+            <!-- SLIDE 1 (Active) -->
+            <div class="carousel-item active">
+                <!-- Anchor Link wrapping the slide contents -->
+                <a href="https://your-website.com" target="_blank" class="d-block custom-slide-height text-decoration-none">
+                    <img src="./images/medilab.png" alt="Slide 1">
+                    <span class="slide-number-overlay">01</span>
+                </a>
             </div>
 
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+                <a href="https://your-website.com" target="_blank" class="d-block custom-slide-height text-decoration-none">
+                    <img src="./images/elixir.png" alt="Slide 2">
+                    <span class="slide-number-overlay">02</span>
+                </a>
+            </div>
+
+            <!-- SLIDE 3 -->
+          
+
+        </div>
+
+        <!-- Left and Right Edge Navigation Arrows -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#mySiteCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mySiteCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</div>
         </div>
 
     </section>
